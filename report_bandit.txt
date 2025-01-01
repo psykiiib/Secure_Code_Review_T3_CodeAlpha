@@ -1,0 +1,51 @@
+Run started:2025-01-01 14:29:16.677698
+
+Test results:
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: 'password123'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.10/plugins/b105_hardcoded_password_string.html
+   Location: ./code.py:4:17
+3	ADMIN_USERNAME = 'admin'
+4	ADMIN_PASSWORD = 'password123'
+5	
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.10/plugins/b608_hardcoded_sql_expressions.html
+   Location: ./code.py:23:21
+22	    cursor = conn.cursor()
+23	    cursor.execute(f"INSERT INTO users (username, password) VALUES ('{username}', '{password}')")
+24	    conn.commit()
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.7.10/plugins/b608_hardcoded_sql_expressions.html
+   Location: ./code.py:30:21
+29	    cursor = conn.cursor()
+30	    cursor.execute(f"SELECT * FROM users WHERE username='{username}' AND password='{password}'")
+31	    user = cursor.fetchone()
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 44
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 1
+		Medium: 2
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 3
+		High: 0
+Files skipped (0):

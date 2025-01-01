@@ -1,0 +1,10 @@
+code.py:6:1: E302 expected 2 blank lines, found 1
+code.py:10:1: E302 expected 2 blank lines, found 1
+code.py:20:1: E302 expected 2 blank lines, found 1
+code.py:23:80: E501 line too long (97 > 79 characters)
+code.py:27:1: E302 expected 2 blank lines, found 1
+code.py:30:80: E501 line too long (96 > 79 characters)
+code.py:35:1: E302 expected 2 blank lines, found 1
+code.py:39:1: W293 blank line contains whitespace
+code.py:47:1: E302 expected 2 blank lines, found 1
+code.py:52:1: E305 expected 2 blank lines after class or function definition, found 1

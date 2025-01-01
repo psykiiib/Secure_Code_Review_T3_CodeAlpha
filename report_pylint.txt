@@ -1,0 +1,13 @@
+************* Module code
+code.py:39:0: C0303: Trailing whitespace (trailing-whitespace)
+code.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+code.py:10:0: C0116: Missing function or method docstring (missing-function-docstring)
+code.py:20:0: C0116: Missing function or method docstring (missing-function-docstring)
+code.py:27:0: C0116: Missing function or method docstring (missing-function-docstring)
+code.py:35:0: C0116: Missing function or method docstring (missing-function-docstring)
+code.py:47:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.00/10 (previous run: 8.00/10, +0.00)
+
